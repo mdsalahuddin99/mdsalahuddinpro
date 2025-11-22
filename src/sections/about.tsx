@@ -5,7 +5,7 @@ import { aboutData } from "../data/about"
 
 export const AboutMeSimple: React.FC = () => {
   return (
-    <section id="about" className="px-4 py-16 sm:py-24">
+    <section id="about" className="px-4 py-10 sm:pb-20">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
           {aboutData.title}
@@ -30,7 +30,7 @@ export const AboutMeSimple: React.FC = () => {
 
           {/* Right Side - Details */}
           <div className="space-y-6 animate-slide-up">
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg text-justify">
               {aboutData.details}
             </p>
           </div>

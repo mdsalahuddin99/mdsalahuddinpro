@@ -5,7 +5,7 @@ import { SectionTitle } from "../components/SectionTitle"
 
 export const Education: React.FC = () => {
   return (
-    <section id="education" className="py-5 px-4 bg-white dark:bg-gray-800/50">
+    <section id="education" className="py-5  px-4 bg-white dark:bg-gray-800/50">
       <div className="container mx-auto max-w-6xl">
         <SectionTitle subtitle="My academic journey and qualifications">Education</SectionTitle>
 

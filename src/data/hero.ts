@@ -4,7 +4,7 @@ export const heroData: HeroType = {
   name: "MD Salah Uddin",
   roles: ["Front end Developer", "Backend Specialist", "Problem Solver"],
   intro:
-    "Knowledge is light. Learning never ends. I grow with every lesson. Passionate about building scalable backend solutions and creating meaningful digital experiences.",
+    "Frontend Developer & WordPress Expert focused on React, Next.js, and creating high-performance websites.",
   profileImage:
     " images/Md Salah Uddin a.jpg",
   links: {

@@ -71,13 +71,13 @@ export const Navbar: React.FC = () => {
               </a>
             ))}
             <div className="ml-4 sm:ml-10">
-              <ThemeToggle />
+              
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
+          
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-gray-700 dark:text-gray-300"
