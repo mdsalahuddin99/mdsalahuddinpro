@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { ThemeToggle } from "./ThemeToggle"
+
 
 const navLinks = [
   { name: "Home", href: "#home" },
