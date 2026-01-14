@@ -29,31 +29,31 @@ export const AboutMeSimple: React.FC = () => {
         <motion.div
           className="absolute -top-24 -right-24 w-64 h-64 bg-primary/40 rounded-full blur-3xl opacity-40"
           animate={{ x: [0, 20, -10, 0], y: [0, 10, -15, 0] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 20, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         />
         <motion.div
           className="absolute -bottom-24 -left-24 w-72 h-72 bg-secondary/40 rounded-full blur-3xl opacity-40"
           animate={{ x: [0, -15, 25, 0], y: [0, -10, 20, 0] }}
-          transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 24, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         />
         <motion.div
           className="absolute left-1/4 top-10 text-4xl opacity-15"
           animate={{ y: [0, -12, 0], rotate: [0, 8, 0] }}
-          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 14, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         >
           ⚛️
         </motion.div>
         <motion.div
           className="absolute right-10 bottom-16 text-3xl opacity-15"
           animate={{ y: [0, 10, 0], rotate: [0, -10, 0] }}
-          transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 16, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         >
           JS
         </motion.div>
         <motion.div
           className="absolute right-1/3 bottom-4 text-3xl opacity-10"
           animate={{ y: [0, -8, 0], rotate: [0, 6, 0] }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 18, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         >
           ⌘
         </motion.div>

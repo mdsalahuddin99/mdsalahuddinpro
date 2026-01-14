@@ -29,7 +29,7 @@ export const MyProcess: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <SectionTitle subtitle="From first pencil line to live, polished experience">
             My Process
@@ -58,7 +58,7 @@ export const MyProcess: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="relative md:grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-center"
             >
               <div className="flex items-start gap-4 md:col-span-2 md:col-start-1 md:pr-10">
@@ -71,7 +71,7 @@ export const MyProcess: React.FC = () => {
                     duration: 6,
                     repeat: Infinity,
                     repeatType: "mirror",
-                    ease: "easeInOut",
+                    ease: [0.42, 0, 0.58, 1],
                   }}
                   className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500/80 via-indigo-500/80 to-violet-500/90 text-white shadow-[0_0_35px_rgba(56,189,248,0.9)]"
                 >
@@ -81,7 +81,7 @@ export const MyProcess: React.FC = () => {
                     transition={{
                       duration: 2.4,
                       repeat: Infinity,
-                      ease: "easeInOut",
+                      ease: [0.42, 0, 0.58, 1],
                     }}
                     className="pointer-events-none absolute inset-0 rounded-2xl bg-sky-400/40 blur-xl"
                   />
@@ -124,7 +124,7 @@ export const MyProcess: React.FC = () => {
                           strokeWidth="2"
                           initial={{ pathLength: 0 }}
                           whileInView={{ pathLength: 1 }}
-                          transition={{ duration: 1.2, ease: "easeInOut" }}
+                          transition={{ duration: 1.2, ease: [0.42, 0, 0.58, 1] }}
                           viewport={{ once: true, amount: 0.7 }}
                         />
                         <motion.rect
@@ -137,7 +137,7 @@ export const MyProcess: React.FC = () => {
                           strokeWidth="1.8"
                           initial={{ pathLength: 0 }}
                           whileInView={{ pathLength: 1 }}
-                          transition={{ duration: 0.9, ease: "easeInOut", delay: 0.2 }}
+                          transition={{ duration: 0.9, ease: [0.42, 0, 0.58, 1], delay: 0.2 }}
                           viewport={{ once: true, amount: 0.7 }}
                         />
                         <motion.rect
@@ -150,7 +150,7 @@ export const MyProcess: React.FC = () => {
                           strokeWidth="1.6"
                           initial={{ pathLength: 0 }}
                           whileInView={{ pathLength: 1 }}
-                          transition={{ duration: 0.9, ease: "easeInOut", delay: 0.35 }}
+                          transition={{ duration: 0.9, ease: [0.42, 0, 0.58, 1], delay: 0.35 }}
                           viewport={{ once: true, amount: 0.7 }}
                         />
                         <motion.rect
@@ -163,7 +163,7 @@ export const MyProcess: React.FC = () => {
                           strokeWidth="1.4"
                           initial={{ pathLength: 0 }}
                           whileInView={{ pathLength: 1 }}
-                          transition={{ duration: 0.9, ease: "easeInOut", delay: 0.5 }}
+                          transition={{ duration: 0.9, ease: [0.42, 0, 0.58, 1], delay: 0.5 }}
                           viewport={{ once: true, amount: 0.7 }}
                         />
                       </motion.svg>
@@ -189,7 +189,7 @@ export const MyProcess: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
               className="relative md:grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center"
             >
               <div className="flex items-start gap-4 md:col-span-2 md:col-start-1 md:pl-10">
@@ -202,7 +202,7 @@ export const MyProcess: React.FC = () => {
                     duration: 5.5,
                     repeat: Infinity,
                     repeatType: "mirror",
-                    ease: "easeInOut",
+                    ease: [0.42, 0, 0.58, 1],
                   }}
                   className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400/80 via-sky-500/80 to-indigo-500/90 text-white shadow-[0_0_35px_rgba(34,197,94,0.9)]"
                 >
@@ -212,7 +212,7 @@ export const MyProcess: React.FC = () => {
                     transition={{
                       duration: 2.1,
                       repeat: Infinity,
-                      ease: "easeInOut",
+                      ease: [0.42, 0, 0.58, 1],
                     }}
                     className="pointer-events-none absolute inset-0 rounded-2xl bg-emerald-400/40 blur-xl"
                   />
@@ -245,7 +245,7 @@ export const MyProcess: React.FC = () => {
                           transition={{
                             duration: 3.2,
                             repeat: Infinity,
-                            ease: "easeInOut",
+                            ease: [0.42, 0, 0.58, 1],
                           }}
                         />
                         <div className="font-mono text-[11px] sm:text-xs text-emerald-100/90">
@@ -273,7 +273,7 @@ export const MyProcess: React.FC = () => {
                           transition={{
                             duration: 2.4,
                             repeat: Infinity,
-                            ease: "easeInOut",
+                            ease: [0.42, 0, 0.58, 1],
                           }}
                         >
                           <motion.span
@@ -344,7 +344,7 @@ export const MyProcess: React.FC = () => {
                     duration: 6.2,
                     repeat: Infinity,
                     repeatType: "mirror",
-                    ease: "easeInOut",
+                    ease: [0.42, 0, 0.58, 1],
                   }}
                   className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-400/80 via-fuchsia-500/80 to-sky-500/90 text-white shadow-[0_0_40px_rgba(168,85,247,0.9)]"
                 >
@@ -354,7 +354,7 @@ export const MyProcess: React.FC = () => {
                     transition={{
                       duration: 2.6,
                       repeat: Infinity,
-                      ease: "easeInOut",
+                      ease: [0.42, 0, 0.58, 1],
                     }}
                     className="pointer-events-none absolute inset-0 rounded-2xl bg-fuchsia-400/40 blur-xl"
                   />
@@ -391,7 +391,7 @@ export const MyProcess: React.FC = () => {
                       transition={{
                         duration: 2.4,
                         repeat: Infinity,
-                        ease: "easeInOut",
+                        ease: [0.42, 0, 0.58, 1],
                       }}
                     >
                       <div className="flex items-center justify-between text-[10px] sm:text-xs text-gray-400">
@@ -426,7 +426,7 @@ export const MyProcess: React.FC = () => {
                         transition={{
                           duration: 3,
                           repeat: Infinity,
-                          ease: "easeInOut",
+                          ease: [0.42, 0, 0.58, 1],
                         }}
                       />
                     </motion.div>

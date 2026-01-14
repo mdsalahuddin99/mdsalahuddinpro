@@ -103,7 +103,7 @@ export const Projects: React.FC = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.45, ease: "easeOut", delay: index * 0.07 },
+      transition: { duration: 0.45, delay: index * 0.07 },
     }),
   }
 
@@ -117,7 +117,7 @@ export const Projects: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <SectionTitle subtitle="Some of my recent work and side projects">Projects</SectionTitle>
         </motion.div>
@@ -155,7 +155,7 @@ export const Projects: React.FC = () => {
             className="overflow-hidden cursor-grab active:cursor-grabbing"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: "easeOut" }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           >
             <motion.div
               drag="x"
@@ -197,7 +197,7 @@ export const Projects: React.FC = () => {
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: "easeOut" }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           >
             <AnimatePresence mode="popLayout">
               {visibleProjects.map((project, index) => (
@@ -264,7 +264,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           alt={project.title}
           className="w-full h-full object-cover"
           whileHover={{ scale: 1.03 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ willChange: "transform", transform: "translateZ(0)", backfaceVisibility: "hidden" }}
         />
         <div

@@ -97,7 +97,7 @@ export const Hero: React.FC = () => {
               duration: star.duration,
               repeat: Infinity,
               delay: star.delay,
-              ease: "easeInOut",
+              ease: [0.42, 0, 0.58, 1],
             }}
           />
         ))}
@@ -210,7 +210,7 @@ export const Hero: React.FC = () => {
                 transition={{
                   duration: 4,
                   repeat: Infinity,
-                  ease: "easeInOut",
+                  ease: [0.42, 0, 0.58, 1],
                 }}
                 className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/30 via-purple-500/30 to-pink-500/30 blur-[60px]"
               />
@@ -276,7 +276,7 @@ export const Hero: React.FC = () => {
                     duration: 4,
                     repeat: Infinity,
                     delay: icon.delay,
-                    ease: "easeInOut",
+                    ease: [0.42, 0, 0.58, 1],
                   }}
                 >
                   <div

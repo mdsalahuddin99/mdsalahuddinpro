@@ -80,7 +80,7 @@ export const TechStack: React.FC = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.4, ease: "easeOut", delay: index * 0.05 },
+      transition: { duration: 0.4, delay: index * 0.05 },
     }),
   }
 
@@ -94,7 +94,7 @@ export const TechStack: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <SectionTitle subtitle="Technologies I use to design, build and ship web experiences">
             Tech Stack
@@ -139,7 +139,7 @@ export const TechStack: React.FC = () => {
             className="overflow-hidden cursor-grab active:cursor-grabbing"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: "easeOut" }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           >
             <motion.div
               drag="x"
@@ -183,7 +183,7 @@ export const TechStack: React.FC = () => {
                           transition={{
                             duration: 2.4,
                             repeat: Infinity,
-                            ease: "easeInOut",
+                            ease: [0.42, 0, 0.58, 1],
                           }}
                           className="h-12 w-12 rounded-xl bg-gray-950/80 border border-white/10 flex items-center justify-center shadow-inner shadow-black/60"
                         >
@@ -215,7 +215,7 @@ export const TechStack: React.FC = () => {
             className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: "easeOut" }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           >
             <AnimatePresence mode="popLayout">
               {visibleItems.map((item, index) => {
@@ -253,7 +253,7 @@ export const TechStack: React.FC = () => {
                         transition={{
                           duration: 2.4,
                           repeat: Infinity,
-                          ease: "easeInOut",
+                          ease: [0.42, 0, 0.58, 1],
                         }}
                         className="h-12 w-12 rounded-xl bg-gray-950/80 border border-white/10 flex items-center justify-center shadow-inner shadow-black/60"
                       >
