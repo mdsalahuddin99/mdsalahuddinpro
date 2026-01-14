@@ -21,7 +21,7 @@ export const AboutMeSimple: React.FC = () => {
     setTilt({ x: 0, y: 0 })
   }
 
-  const coreTech = ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "WordPress"]
+  const coreTech = ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "WordPress"]
 
   return (
     <section id="about" className="relative px-4 py-16 sm:py-20 md:py-24">

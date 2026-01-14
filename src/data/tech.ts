@@ -9,7 +9,6 @@ export const techData: TechType[] = [
 
   // ⚛️ Frontend Frameworks & Styling
   { id: "5", name: "React", img: "/images/react.png", category: "Frontend" },
-  { id: "6", name: "Next.js", img: "/images/nextjs.png", category: "Frontend" },
   { id: "7", name: "Tailwind CSS", img: "/images/tailwind-css.png", category: "Frontend" },
   { id: "8", name: "Bootstrap", img: "/images/bootstrap.png", category: "Frontend" },
   { id: "9", name: "CMS (WordPress)", img: "/images/wordpress.png", category: "Frontend" },

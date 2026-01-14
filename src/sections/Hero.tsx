@@ -1,7 +1,7 @@
 import type React from "react"
 import { useRef } from "react"
-import { motion, useScroll, useTransform, useSpring, useMotionValue } from "framer-motion"
-import { Github, Linkedin, Download, Mail, MousePointer2 } from "lucide-react"
+import { motion, useSpring, useMotionValue } from "framer-motion"
+import { Github, Linkedin, Download } from "lucide-react"
 import { heroData } from "../data/hero"
 import { useTyped } from "../hooks/useTyped"
 
@@ -19,13 +19,6 @@ const floatingIcons = [
     color: "rgba(234,179,8,0.6)", // Yellow
     position: "top-20 -right-8 md:top-16 md:-right-16",
     delay: 1.5,
-  },
-  {
-    name: "Next.js",
-    img: "/images/nextjs.png",
-    color: "rgba(255,255,255,0.4)", // White
-    position: "bottom-10 -left-6 md:bottom-20 md:-left-16",
-    delay: 0.8,
   },
   {
     name: "Tailwind",
@@ -271,7 +264,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Floating Icons */}
-              {floatingIcons.map((icon, index) => (
+              {floatingIcons.map((icon) => (
                 <motion.div
                   key={icon.name}
                   className={`absolute ${icon.position} z-20`}

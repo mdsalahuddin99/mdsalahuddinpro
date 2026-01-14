@@ -5,11 +5,10 @@ import { techData } from "../data/tech"
 import { Card } from "../components/Card"
 import { SectionTitle } from "../components/SectionTitle"
 
-const coreTechNames = ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "WordPress"]
+const coreTechNames = ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "WordPress"]
 
 const accentClasses: Record<string, string> = {
   React: "border-cyan-500/40 shadow-cyan-500/40",
-  "Next.js": "border-slate-300/40 shadow-slate-300/40",
   TypeScript: "border-blue-500/40 shadow-blue-500/40",
   "Tailwind CSS": "border-sky-400/40 shadow-sky-400/40",
   Bootstrap: "border-violet-500/40 shadow-violet-500/40",

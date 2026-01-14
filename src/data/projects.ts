@@ -26,7 +26,7 @@ export const projectsData: ProjectType[] = [
     title: "Islamic School Website",
     description: "Modern islamic  platform with markdown support, SEO optimization, and analytics dashboard.",
     image: "images/madrash websit.png",
-    technologies: ["Next.js", "Mongo DB", "Express", "Tailwind"],
+    technologies: ["React", "Mongo DB", "Express", "Tailwind"],
     githubUrl: "https://github.com/mdsalahuddin99/qaumi-madrasah",
     liveUrl: "https://qaumi-madrasah.vercel.app/",
   },
