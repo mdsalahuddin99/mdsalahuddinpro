@@ -76,4 +76,22 @@
   .gradient-border:hover::before {
     @apply opacity-100;
   }
+
+  .marquee-container {
+    @apply overflow-hidden relative;
+  }
+
+  .marquee-track {
+    @apply flex gap-2 sm:gap-3;
+    animation: marquee 22s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

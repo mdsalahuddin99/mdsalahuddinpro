@@ -52,6 +52,9 @@ const defaultConfig = {
         "fade-in": "fadeIn 0.6s ease-in-out",
         "slide-up": "slideUp 0.6s ease-out",
         glow: "glow 2s ease-in-out infinite",
+        "spin-slow": "spin 15s linear infinite",
+        "gradient-x": "gradient-x 15s ease infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         fadeIn: {
@@ -65,6 +68,24 @@ const defaultConfig = {
         glow: {
           "0%, 100%": { boxShadow: "0 0 20px rgba(139, 92, 246, 0.5)" },
           "50%": { boxShadow: "0 0 30px rgba(139, 92, 246, 0.8)" },
+        },
+        "gradient-x": {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+        shimmer: {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
         },
       },
     },

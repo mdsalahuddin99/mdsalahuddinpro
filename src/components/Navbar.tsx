@@ -4,9 +4,9 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
-
 const navLinks = [
   { name: "Home", href: "#home" },
+  { name: "My Process", href: "#process" },
   { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },

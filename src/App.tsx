@@ -7,6 +7,7 @@ import { Contact } from "./sections/Contact"
 import { Footer } from "./sections/Footer"
 import { Navbar } from "./components/Navbar"
 import { AboutMeSimple } from "./sections/about"
+import { MyProcess } from "./sections/MyProcess"
  
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       
       <Hero />
       <AboutMeSimple />
+      <MyProcess />
       <Education />
       <TechStack />
       <Projects />
